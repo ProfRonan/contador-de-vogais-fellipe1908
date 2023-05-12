@@ -4,9 +4,9 @@
 def count_vowels(string:str) -> int:
     quant = 0
     for c in string:
-        if c in "aeiou":
+        if c in "aeiou" or c in "AEIOU ":
             quant += 1
-    print(quant)
+    return quant
 
 if __name__ == "__main__":
-    count_vowels()
+    count_vowels("")
